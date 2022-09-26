@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/Fun-Logo.png" />
+    <link
+      rel="stylesheet"
+      href="./src/style.css" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Sarcastic Password Generator</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="heading"><h1>Ultimate Password Generator</h1></div>
+      <div
+        id="password-length-message"
+        class="warning"></div>
+      <div id="password-length-input">
+        <p class="message">
+          Type in the desired length for your password: (1-15)
+        </p>
+        <input
+          type="text"
+          id="length-input"
+          class="input-text"
+          placeholder="0" />
+      </div>
+      <div
+        id="password-strength-message"
+        class="warning"></div>
+      <div id="password-strength">
+        <p class="message">Select the strength level of your password:</p>
+        <div id="strength-selection">
+          <table>
+            <tr>
+              <td>
+                <input
+                  type="checkbox"
+                  id="Uppercase"
+                  name="selection"
+                  class="checkbox" />
+                <p class="options">Uppercase</p>
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  id="Lowercase"
+                  name="selection"
+                  class="checkbox" />
+                <p class="options">Lowercase</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="checkbox"
+                  id="Numbers"
+                  name="selection"
+                  class="checkbox" />
+                <p class="options">Numbers</p>
+              </td>
+              <td>
+                <input
+                  style="margin-left: 18px"
+                  type="checkbox"
+                  id="Symbols"
+                  name="selection"
+                  class="checkbox" />
+                <p class="options">Symbols</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div
+          id="password-generation-message"
+          class="warning"
+          style="margin-top: 20px"></div>
+        <div id="password-generation">
+          <input
+            style="margin-top: 20px"
+            type="button"
+            value="GENERATE"
+            class="generate"
+            id="genButton" />
+          <input
+            type="text"
+            class="input-text output-text"
+            id="generated-password"
+            style="width: 350px; margin-top: 20px" />
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="./src/main.ts"></script>
+  </body>
+</html>

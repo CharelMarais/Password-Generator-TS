@@ -1,0 +1,161 @@
+body {
+  background-color: rgb(46, 43, 33);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  font-family: monospace;
+}
+
+#app {
+  margin-top: 100px;
+  display: block;
+  width: 400px;
+  height: 450px;
+  background-color: rgb(23, 21, 13);
+  border: 0.8px solid rgb(177, 141, 0);
+  border-radius: 1%;
+}
+
+h1 {
+  display: flex;
+  font-size: xx-large;
+  justify-content: center;
+  color: rgb(177, 141, 0);
+}
+
+.warning {
+  display: flex;
+  justify-content: center;
+  border: 0.8px solid rgb(177, 141, 0);
+}
+
+#password-length-input {
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  display: flex;
+  margin: 8px auto 2px 0;
+  justify-content: center;
+  color: rgb(177, 141, 0);
+}
+
+.input-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  border: 0.8px solid rgb(177, 141, 0);
+  background-color: rgb(47, 47, 46);
+  color: rgb(177, 141, 0);
+  text-align: center;
+  border-radius: 20%;
+}
+
+#password-strength-message {
+  margin-top: 20px;
+}
+
+.checkbox {
+  background-color: rgb(47, 47, 46);
+  color: rgb(47, 47, 46);
+}
+
+.options {
+  color: rgb(177, 141, 0);
+  display: inline;
+}
+
+td {
+  display: inline-block;
+  margin: 0 20px 0 20px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.generate {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  box-shadow: 5px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-style: oblique;
+  font-size: x-large;
+  color: red;
+  border: 2px solid red;
+  box-shadow: 0px 0px 2px 2px red;
+  background-color: rgb(23, 21, 13);
+}
+
+.generate:hover {
+  color: red;
+  border: 2px solid red;
+  box-shadow: 0px 0px 2px 2px red;
+  background-color: rgb(23, 21, 13);
+}
+
+.generate:hover {
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.generate:active {
+  color: rgb(0, 255, 13);
+  border: 2px solid rgb(0, 255, 13);
+  box-shadow: 0px 0px 2px 2px rgb(0, 255, 13);
+  background-color: rgb(23, 21, 13);
+}
+
+.error-message-length {
+  color: red;
+  background-color: rgba(255, 30, 0, 0.338);
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+.correct-message-length {
+  color: rgb(0, 255, 13);
+  background-color: rgba(0, 255, 21, 0.338);
+  width: 100%;
+  border: 1px solid rgb(0, 255, 13);
+  display: flex;
+  justify-content: center;
+}
+
+.warning-message-length {
+  color: rgb(255, 255, 0);
+  background-color: rgba(255, 255, 0, 0.338);
+  width: 100%;
+  border: 1px solid rgb(255, 255, 0);
+  display: flex;
+  justify-content: center;
+}
+
+.output-text {
+  font-weight: 200;
+  color: rgb(255, 205, 7);
+}
